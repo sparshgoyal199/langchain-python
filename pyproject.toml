@@ -1,0 +1,21 @@
+[project]
+name = "langchain_learning"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "sparshgoyal199",email = "sparshgoyal199@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.9,<4.0"
+dependencies = [
+    "python-dotenv (>=1.1.1,<2.0.0)",
+    "langchain-google-genai (>=2.1.5,<3.0.0)",
+    "langchain-core (>=0.3.66,<0.4.0)",
+    "langchain (>=0.3.26,<0.4.0)",
+    "langchain-community (>=0.3.26,<0.4.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
