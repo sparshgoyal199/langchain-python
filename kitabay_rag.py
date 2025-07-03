@@ -22,10 +22,11 @@ index = index_creator.from_loaders([loader])
 prompt = PromptTemplate(template="Please provide a concise answer in bullet points for the following: {text}",input_variables=(["text"]))
 
 while True:
-    user_message = input("Hi there! I'm KitabayBot. What can I do for you today?\n")
+    user_message = input("Hi there! I'm KitabayBot. What can I do for you today: ")
     if(user_message == "" or user_message == "exit"):
         break
     query = prompt.format(text=user_message)
+    #print(index)
     AI_res = index.query(query,llm=llm)
     print(AI_res)
     print()
